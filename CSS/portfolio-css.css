@@ -31,8 +31,8 @@
 .pg1-text .comment{
     color: rgb(0, 110, 20);
     font-family: 'Roboto', sans-serif;
-    font-size: 7px;
-    border-right: solid 1px rgb(255, 255, 255);
+    font-size: 45px;
+    border-right: solid 4px rgb(255, 255, 255);
     white-space: nowrap;
     position: absolute;
     animation: animated-cursor 600ms steps(29,end) infinite ;
@@ -49,13 +49,13 @@
     padding-top: 15%;
     color:rgb(253, 249, 242);
     font-family: 'Roboto', sans-serif;
-    font-size: 10px;
+    font-size: 50px;
 }
 
 .pg1-text .words{
-    padding-left: 10pt;
+    padding-left: 50pt;
     font-family: 'Roboto Slab', serif;
-    font-size: 2.25pt;
+    font-size: 11pt;
     color: rgb(254, 255, 234);
     line-height: 1.25;
 }
@@ -63,7 +63,7 @@
 .curly-closed{
     color:rgb(253, 249, 242);
     font-family: 'Roboto', sans-serif;
-    font-size: 10px;
+    font-size: 50px;
 }
 
 /* page one end */
