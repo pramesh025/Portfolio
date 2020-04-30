@@ -115,20 +115,22 @@ input:checked ~ .pg2-text{
     margin: 0;
     padding: 7% 10%;
     display: none;
-    color: rgb(240, 239, 239);
+    color: #f0efef;
     position: absolute;
     transition: all 5s;
 }
 
 .pg2-heading{
+
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 55pt;
+    text-shadow: green ;
 }
 
 .pg2-grid{
     height: auto;
-    margin-top: 15vh;
+    margin-top: 10vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -144,8 +146,8 @@ input:checked ~ .pg2-text{
 
 .pg2-soft{
     font-family: 'Roboto Slab', serif;
-    border: px solid black;    
     padding:10%;
+    padding-left:15%;
 }
 
 .pg2-des h1, .pg2-prog h1, .pg2-soft h1{
