@@ -4,8 +4,7 @@
 
 /* page one */
 .pg1{
-    max-width: 100%;
-    min-width: 60%;
+    width: 100%;
     height: 100vh;
     display: grid;
     grid-template-columns: auto auto;
@@ -26,7 +25,7 @@
     text-align: justify;
     text-align-last: left;
     background-color: rgb(22, 19, 19);
-    padding: 15% 14% 15% 10%; 
+    padding: 30% 14% 15% 10%; 
 }
 
 .pg1-text .comment{
@@ -50,13 +49,13 @@
     padding-top: 15%;
     color:rgb(253, 249, 242);
     font-family: 'Roboto', sans-serif;
-    font-size: 6vh;
+    font-size: 5vh;
 }
 
 .pg1-text .words{
     padding-left: 50pt;
     font-family: 'Roboto Slab', serif;
-    font-size: 2.5vh;
+    font-size: 2.25vh;
     color: rgb(254, 255, 234);
     line-height: 1.25;
 }
@@ -64,7 +63,7 @@
 .curly-closed{
     color:rgb(253, 249, 242);
     font-family: 'Roboto', sans-serif;
-    font-size: 6vh;
+    font-size: 5vh;
 }
 
 /* page one end */
@@ -73,8 +72,7 @@
 
 /* page 2 */
 .pg2{
-    max-width: 100vw;
-    min-width: 60vw;
+    width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -89,17 +87,17 @@ input {
   
 label[for="toggle-circle"] {
     cursor: pointer;
-   min-width: 100px;
-   min-height: 100px;
-   animation: change_color 4s alternate infinite,
-              shrink 1s alternate infinite ease-in-out;
-   font-size: 74px;
-   border-radius: 50%;
-   overflow: visible;
-   vertical-align: center;
-   border: 0px solid rgb(0, 110, 20);
-   transition: border .9s;
-   transition-timing-function: ease;
+    min-width: 100px;
+    min-height: 100px;
+    animation: change_color 4s alternate infinite,
+                shrink 1s alternate infinite ease-in-out;
+    font-size: 74px;
+    border-radius: 50%;
+    overflow: visible;
+    vertical-align: center;
+    border: 0px solid rgb(0, 110, 20);
+    transition: border .9s;
+    transition-timing-function: ease;
 }
  
 input:checked + label[for="toggle-circle"] {
@@ -110,47 +108,55 @@ input:checked ~ .pg2-text{
     display: block;
 }
 
+.pg2-heading img{
+    height:10vw;
+    width:auto;
+}
+
 .pg2-text{
     width:100%;
     height: 100vh;
     margin: 0;
-    padding: 7% 10%;
+    padding: 7% 7%;
+    padding-right: 5%;
     display: none;
     color: #f0efef;
     position: absolute;
     transition: all 5s linear;
+    overflow:hidden;
 }
 
 
 .pg2-grid{
     height: auto;
-    margin-top: 5vh;
+    margin-top: 10vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-
+    grid-gap: 10vw ;
 }
 .pg2-des{
     font-family: 'Roboto Slab', serif;
-    padding: 10%;
+    padding: 0%;
     border-top: 2px solid;
 }
 
 .pg2-prog{
     font-family: 'Roboto Slab', serif;
-    padding:10%;
+    padding:0%;
+    padding-bottom: 3%;
     border-bottom: 2px solid;
 }
 
 .pg2-soft{
     font-family: 'Roboto Slab', serif;
-    padding:10%;
+    padding:0%;
     padding-left:15%;
     border-top: 2px solid;
 }
 
 .pg2-des h1, .pg2-prog h1, .pg2-soft h1{
     font-family: 'Roboto', sans-serif;
-    font-size: 30pt;
+    font-size: 5vh;
     line-height: 2;
     text-shadow: 4px 3px 4px #003100;
 }
@@ -161,9 +167,15 @@ input:checked ~ .pg2-text{
     padding-left: 5% ;
 }
 
+
+/* page two ends */
+
+
+
+
+/* page 3 */
 .pg3{
-    max-width: 100vw;
-    min-width: 60vw;
+    width: 100%;
     height: 100vh;
     overflow: hidden;
     background-color: #f0efef;
@@ -173,7 +185,7 @@ input:checked ~ .pg2-text{
 .pg3-animat1{
     width: 300px;
     height: 300px;
-    display: float;
+    display: flex;
     position: relative;
     margin-left:80%;
     bottom: 30%;
@@ -184,8 +196,9 @@ input:checked ~ .pg2-text{
 }
 
 .pg3-head p{
-    padding:90pt 60pt;
-    font-size: 50pt;
+    padding: 90pt 60pt;
+    padding-bottom: 10vh;
+    font-size: 10vh;
     font-weight: 500;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
@@ -193,40 +206,44 @@ input:checked ~ .pg2-text{
 
 .pg3-set, .pg3-locus{
     display: inline-block;
-    margin-left: 110pt;
+    margin-left: 7%;
     padding: 20pt 10pt;
     border-left: 2px solid;
     margin-top: 60pt;
 }
 .pg3-locus{
-    margin-left:150pt;
+    margin-left:10vw;
 }
 .pg3-set .title, .pg3-locus .title{
     font-family: 'Roboto', sans-serif;
-    font-size:30pt;
+    font-size:6vh;
 }
 
 .pg3-set .place, .pg3-locus .place{
     font-family: 'Roboto Slab', serif;
-    font-size:12pt;
+    font-size:3vh;
     line-height: 2;
 
 }
 
+/* page three ends */
 
+
+
+/* page four starts */
 .pg4{
-    max-width: 100vw;
-    min-width: 60vw;
-    height: 35vh;
+    width: 100%;
+    height: auto;
     padding:50px;
-    padding-left: 80px;
+    padding-bottom:20px;
+    padding-left: 10vh;
     background-color: #161313;
     color: rgb(240, 239, 239);
+    overflow: hidden;
 }
 
-
 .pg4-head{
-    font-size: 30pt;
+    font-size: 5vh;
     font-family: 'Roboto', sans-serif;
 }
 .pg4-info{
@@ -239,8 +256,12 @@ input:checked ~ .pg2-text{
 .pg4 i{
     font-size:15pt;
 }
+/* page four ends */
 
 
+
+
+/* preloader */
 .preloader{
     width: 100%;
     height: 100vh;
@@ -250,14 +271,13 @@ input:checked ~ .pg2-text{
     background-color: #161313;
     animation: disappear 2s forwards;
     animation-delay: 7s;
-    display:none;
-
+    /* display:none; */
 }
 .lds-ripple {
     display: inline-block;
     position: relative;
-    width: 100px;
-    height: 100px;
+    width: 30%;
+    height: 30%;
     top: 45%;
     left: 45%;
   }
