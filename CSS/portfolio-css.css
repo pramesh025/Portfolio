@@ -117,7 +117,7 @@ input:checked ~ .pg2-text{
     display: none;
     color: #f0efef;
     position: absolute;
-    transition: all 5s;
+    transition: all 5s linear;
 }
 
 
@@ -126,21 +126,25 @@ input:checked ~ .pg2-text{
     margin-top: 5vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+
 }
 .pg2-des{
     font-family: 'Roboto Slab', serif;
     padding: 10%;
+    border-top: 2px solid;
 }
 
 .pg2-prog{
     font-family: 'Roboto Slab', serif;
     padding:10%;
+    border-bottom: 2px solid;
 }
 
 .pg2-soft{
     font-family: 'Roboto Slab', serif;
     padding:10%;
     padding-left:15%;
+    border-top: 2px solid;
 }
 
 .pg2-des h1, .pg2-prog h1, .pg2-soft h1{
@@ -161,32 +165,55 @@ input:checked ~ .pg2-text{
     min-width: 60vw;
     height: 100vh;
     overflow: hidden;
-    background-color: #161313;
+    background-color: #f0efef;
+    color:#161313;
 }
 
 .pg3-animat1{
     width: 300px;
     height: 300px;
-    display: block;
+    display: float;
     position: relative;
-    margin-left:85%;
-    top:60%;
-    background-color: rgb(228, 216, 48);
+    margin-left:80%;
+    bottom: 30%;
     transform: rotate(45deg);
-    animation: rot-change 5s infinite alternate ease-in-out;
+    animation: change_color 5s alternate infinite,
+        rot-change 5s infinite alternate ease-in-out;
+    z-index: 10;
 }
 
+.pg3-head p{
+    padding:90pt 60pt;
+    font-size: 50pt;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
 
+.pg3-set, .pg3-locus{
+    display: inline-block;
+    margin-left: 110pt;
+    padding: 20pt 10pt;
+    border-left: 2px solid;
+    margin-top: 60pt;
+}
+.pg3-locus{
+    margin-left:150pt;
+}
+.pg3-set .title, .pg3-locus .title{
+    font-family: 'Roboto', sans-serif;
+    font-size:30pt;
+}
+
+.pg3-set .place, .pg3-locus .place{
+    font-family: 'Roboto Slab', serif;
+    font-size:12pt;
+    line-height: 2;
+
+}
 
 
 .pg4{
-    max-width: 100vw;
-    min-width: 60vw;
-    height: 100vh;
-}
-
-
-.pg5{
     max-width: 100vw;
     min-width: 60vw;
     height: 35vh;
@@ -195,14 +222,19 @@ input:checked ~ .pg2-text{
     background-color: #161313;
     color: rgb(240, 239, 239);
 }
-.pg5-head{
+
+
+.pg4-head{
     font-size: 30pt;
     font-family: 'Roboto', sans-serif;
 }
-.pg5-info{
+.pg4-info{
     padding-top: 10pt;
     padding-left: 40pt;
     font-size: 12pt;
     font-family: 'Roboto Slab', serif;
     line-height: 1.5;
+}
+.pg4 i{
+    font-size:15pt;
 }
