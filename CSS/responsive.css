@@ -11,52 +11,15 @@
         background-position: center;
         padding:0% 0% 0% 0%;
         overflow: hidden;
-        font-size:100pt;
     }
     .pg1-binder{
-        height:200vh;
+        height:120vh;
         margin:-20%;
-        padding-top:40%;
-        padding-left:30%;
-        padding-right:30%;
+        padding-top:35%;
+        padding-left:20%;
+        padding-right:20%;
         background-color: rgb(22, 19, 19);
         opacity: 90%;
         position: relative;
-    }
-}
-
-
-
-@media only screen and (max-width: 24cm){
-    .pg2-grid{
-        height: auto;
-        margin-top: 1vh;
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    }
-    .pg2-des, .pg2-prog, .pg2-soft{
-        padding:0%;
-        padding-bottom: 0;
-        border:none;
-        border-top: 2px solid;
-    }
-
-    .pg2-heading img{
-        height: 3cm;
-        width:auto;
-        margin-bottom: 10%;
-    }
-}
-
-
-
-@media only screen and (max-width: 24cm){
-    .pg3-set, .pg3-locus{
-        display: block;
-        margin-left: 7%;
-        padding: 20pt 10pt;
-        border-left: 2px solid;
-        margin-top: 20pt;
     }
 }
