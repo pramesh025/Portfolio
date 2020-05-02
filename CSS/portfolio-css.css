@@ -42,7 +42,7 @@
     content: " ";
     animation: abomination1 3.5s linear 1;
     animation-fill-mode: forwards;
-    animation-delay: 10s;
+    animation-delay: 9s;
 }
 
 .pg1-text .name{ 
@@ -270,11 +270,7 @@ input:checked ~ .pg2-text{
     overflow: hidden;
     background-color: #161313;
     animation: disappear 2s forwards;
-<<<<<<< HEAD
     animation-delay: 8s;
-=======
-    animation-delay: 7s;
->>>>>>> parent of cb78467... Revert "responsive"
     /* display:none; */
 }
 .lds-ripple {
