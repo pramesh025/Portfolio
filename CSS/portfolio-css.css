@@ -36,14 +36,14 @@
     border-right: solid 4px rgb(255, 255, 255);
     white-space: nowrap;
     position: absolute;
-    animation: animated-cursor 0.9s steps(29,end) infinite ;
+    animation: animated-cursor 1.3s steps(29,end) infinite ;
 }
 
 .comment:after{
     content: " ";
     animation: abomination1 3.5s linear 1;
     animation-fill-mode: forwards;
-    animation-delay: 9s;
+    animation-delay: 10s;
 }
 
 .pg1-text .name{ 
@@ -249,9 +249,8 @@ input:checked ~ .pg2-text{
     overflow: hidden;
     background-color: #161313;
     animation: disappear 2s forwards;
-    animation-delay: 7s;
-    display:none;
-
+    animation-delay: 8s;
+    /* display:none; */
 }
 .lds-ripple {
     display: inline-block;
